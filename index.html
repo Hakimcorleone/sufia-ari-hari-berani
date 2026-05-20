@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ari dan Hari Berani</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cloud cloud-1"></div>
+<div class="cloud cloud-2"></div>
+<div class="cloud cloud-3"></div>
+<span class="star" style="top:20%;right:5%;animation-delay:0s">✦</span>
+<span class="star" style="top:40%;right:8%;animation-delay:1s">★</span>
+<span class="star" style="top:30%;left:3%;animation-delay:2s">✦</span>
+<span class="star" style="top:60%;left:5%;animation-delay:0.5s">⭐</span>
+
+<div class="author-tag">✍️ Sufia Aishah Shaisham</div>
+<button class="fs-btn" onclick="toggleFS()">⛶ Fullscreen</button>
+
+<div class="book-container">
+  <div class="book-title">
+    <span>🐰</span>
+    <span>Ari dan Hari Berani</span>
+    <span>🐦</span>
+  </div>
+
+  <div class="page-wrapper">
+    <div class="page-card" id="pageCard">
+      <img id="pageImg" src="" alt="Page 1">
+    </div>
+  </div>
+
+  <div class="nav-area">
+    <button class="nav-btn prev" id="prevBtn" onclick="changePage(-1)" disabled>◀</button>
+    <div class="page-dots" id="pageDots"></div>
+    <button class="nav-btn next" id="nextBtn" onclick="changePage(1)">▶</button>
+  </div>
+  <div class="page-counter" id="pageCounter">Muka 1 / 13</div>
+</div>
+
+<div class="keyboard-hint">← → untuk tukar muka surat &nbsp;|&nbsp; Space untuk seterusnya</div>
+
+<script src="script.js"></script>
+</body>
+</html>
